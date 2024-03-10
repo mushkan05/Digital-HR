@@ -1,0 +1,169 @@
+body
+{
+	font-family: "Ubuntu", sans-serif;
+}
+
+#outer
+{
+    width: 1000px;
+    min-height: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#header
+{
+    width: 1000px;
+    height: 150px;
+}
+
+#logo
+{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    transition: transform .2s; /* Animation */
+}
+
+#logo:hover
+{
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#title
+{
+    width: 850px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, #330066, #009999);
+    color: whitesmoke;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    float: right;
+}
+
+#menu
+{
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+#menu ul
+{
+    list-style: none;
+}
+
+#menu ul li
+{
+    display: inline;
+    padding: 15px;
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: #666666;
+    font-size: 20px;
+    transition: 0.5s;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition: 0.5s;
+}
+
+#menu ul li a:hover
+{
+    font-size: 30px;
+    color: #00cccc;
+    border-bottom: 1.5px solid #00cccc;
+    transition: 0.5s;
+}
+
+#active a 
+{
+    color: #00cccc !important;
+}
+
+#main
+{
+    width: 1000px;
+    min-height: 700px;
+    height: auto;
+    margin-top: 5px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+h1 {
+  background: -webkit-linear-gradient(#330066, #009999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+table
+{
+    background-color: beige;
+    color: #009999;
+}
+
+table td
+{
+    font-family: 'Work Sans', sans-serif;
+}
+
+#para:hover
+{
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 0px; background-color: #003333; color: beige;}
+}
+
+#input-box {
+  border: 1.5px solid #ccc;
+  border-radius: 15px;
+  padding: 6px;
+  outline: none;
+  color: #009999;
+}
+
+#input-box:focus {
+  border-color: #009999;
+}
+
+#footer
+{
+    width: 1000px;
+    height: 85px;
+    margin-top: 5px;
+}
+
+#lfooter
+{
+    width: 500px;
+    height: 85px;
+    background-image: linear-gradient(to bottom right, black, #333333);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 85px;
+    float: left;
+}
+
+#rfooter
+{
+    width: 500px;
+    height: 85px;
+    background-image: linear-gradient(to bottom right, blue, #99ffff);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 85px;
+    float: right;
+}
